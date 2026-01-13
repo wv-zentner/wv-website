@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-header, section, footer {
+header, section {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
@@ -40,8 +40,11 @@ header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
   width: 100%;
+}
+
+.navbar .logo {
+  padding-left: 3rem;
 }
 
 .navbar .logo a {
@@ -65,7 +68,7 @@ header p {
   align-items: right;
   gap: 1.5rem;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem 0 0;
 }
 
 .navbar .nav-links li a {
@@ -128,6 +131,14 @@ form button {
 
 form button:hover {
   background: #0056b3;
+}
+
+#contract {
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
 }
 
 .map-container {
@@ -207,6 +218,17 @@ footer a:hover {
 .footer-bottom {
   margin-top: 2rem;
   font-size: 0.9rem;
+}
+
+/* Mobile responsive padding */
+@media (max-width: 768px) {
+  .navbar .logo {
+    padding-left: 1.5rem;
+  }
+
+  .navbar .nav-links {
+    padding: 0 1rem 0 0;
+  }
 }
 
 @media (min-width: 900x) {
