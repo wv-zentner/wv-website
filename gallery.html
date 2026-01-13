@@ -32,13 +32,121 @@
     <p>Der Weg ist das Ziel.</p>
   </header>
   <main>
-  <h1>Schauen Sie selbst</h1>
-    <div class="gallery">
-      <img src="images/rv1.jpg" alt="RV front view">
-      <img src="images/rv2.jpg" alt="RV interior">
-      <img src="images/rv3.jpg" alt="RV kitchen">
-      <img src="images/rv4.jpg" alt="RV bedroom">
+    <h1>Schauen Sie selbst</h1>
+    
+    <!-- Gallery Filters -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Alle Bilder</button>
+      <button class="filter-btn" data-filter="kitchen">Küche</button>
+      <button class="filter-btn" data-filter="bedroom">Schlafzimmer</button>
+      <button class="filter-btn" data-filter="living">Wohnbereich</button>
     </div>
+
+    <!-- Interior Kitchen Section -->
+    <section class="gallery-section">
+      <h2>Küche</h2>
+      <div class="image-grid">
+        <div class="gallery-item kitchen" data-category="kitchen">
+          <img src="images/kitchen.webp" alt="Küche">
+          <div class="image-caption">
+            <h3>Küche</h3>
+            <p>Modern ausgestattete Küche mit reichlich Stauraum und allen Annehmlichkeiten für komfortables Kochen.</p>
+          </div>
+        </div>
+        <div class="gallery-item kitchen" data-category="kitchen">
+          <img src="images/kitchen-storage.webp" alt="Stauraum Küche">
+          <div class="image-caption">
+            <h3>Stauraum</h3>
+            <p>Stauraum mit viel Platz für Geschirr, Töpfe und Vorräte.</p>
+          </div>
+        </div>
+        <div class="gallery-item kitchen" data-category="kitchen">
+          <img src="images/fridge.webp" alt="Kompakter Kühlschrank">
+          <div class="image-caption">
+            <h3>Kühlschrank</h3>
+            <p>Kompakter Kühlschrank für Lebensmittel und Getränke.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior Bedroom Section -->
+    <section class="gallery-section">
+      <h2>Schlafzimmer</h2>
+      <div class="image-grid">
+        <div class="gallery-item bedroom" data-category="bedroom">
+          <img src="images/bed-back.webp" alt="Comfortable sleeping area">
+          <div class="image-caption">
+            <h3>Schlafbereich</h3>
+            <p>Gemütliche Schlafplätze mit bequemer Liegefläche und gemütlicher Atmosphäre.</p>
+          </div>
+        </div>
+        <div class="gallery-item bedroom" data-category="bedroom">
+          <img src="images/drop-down-bed.webp" alt="Drop-down bed mechanism">
+          <div class="image-caption">
+            <h3>Hubbett</h3>
+            <p>Praktisches Hubbett für zwei zusätzliche Schlafplätze.</p>
+          </div>
+        </div>
+        <div class="gallery-item bedroom" data-category="bedroom">
+          <img src="images/drop-down-bed.light.webp" alt="Hubbett Lichter">
+          <div class="image-caption">
+            <h3>Lichter unter dem Hubbett</h3>
+            <p>LED-Lampen unter dem Hubbett für bequemes Ambiente.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Interior Living Area Section -->
+    <section class="gallery-section">
+      <h2>Wohnbereich</h2>
+      <div class="image-grid">
+        <div class="gallery-item living" data-category="living">
+          <img src="images/interior.webp" alt="RV interior living area">
+          <div class="image-caption">
+            <h3>Wohnbereich</h3>
+            <p>Helles und freundliches Wohnbereich mit komfortabler Sitzecke und Essgelegenheit.</p>
+          </div>
+        </div>
+        <div class="gallery-item living" data-category="living">
+          <img src="images/front-view.webp" alt="Front driver area">
+          <div class="image-caption">
+            <h3>Fahrerplatz</h3>
+            <p>Modern ausgestatteter Fahrerplatz mit allen wichtigen Instrumenten und guter Sicht.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exterior Features Section -->
+    <section class="gallery-section">
+      <h2>Außenansicht</h2>
+      <div class="image-grid">
+        <div class="gallery-item exterior" data-category="exterior">
+          <img src="images/front-side-view.webp" alt="RV exterior side view">
+          <div class="image-caption">
+            <h3>Seitliche Ansicht</h3>
+            <p>Stilvolles Äußeres Design mit aerodynamischen Linien und moderner Optik.</p>
+          </div>
+        </div>
+        <div class="gallery-item exterior" data-category="exterior">
+          <img src="images/back-side-view.webp" alt="RV rear exterior view">
+          <div class="image-caption">
+            <h3>Heckansicht</h3>
+            <p>Praktische Heckansicht mit großer Stauramfläche und guter Erreichbarkeit.</p>
+          </div>
+        </div>
+        <div class="gallery-item exterior" data-category="exterior">
+          <img src="images/above-driver-seat.webp" alt="Driver seat area">
+          <div class="image-caption">
+            <h3>Fahrersitz</h3>
+            <p>Bequemer und bequemer Fahrersitz mit vielen Einstellmöglichkeiten.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   <div class="footer-social">
@@ -65,6 +173,9 @@
     </div>
   </div>
   </div>
-</footer>
+  </footer>
+  
+  <!-- Gallery JavaScript -->
+  <script src="scripts/gallery.js"></script>
 </body>
 </html>
