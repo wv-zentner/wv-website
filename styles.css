@@ -96,20 +96,6 @@ header p {
   border-radius: 8px;
 }
 
-#pricing {
-  background: #f7f7f7;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 10px;
-}
-
-.pricing-card {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
 form {
   display: flex;
   flex-direction: column;
