@@ -37,12 +37,11 @@ header p {
 }
 
 .navbar-content {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  width: 100%;
 }
 
 .navbar .logo a {
