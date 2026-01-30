@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Close menu when clicking outside
     document.addEventListener('click', function(e) {
-      if (!e.target.closest('.navbar')) {
+      const navbar = document.querySelector('.navbar');
+      if (navbar && !navbar.contains(e.target)) {
         navLinks.classList.remove('active');
         hamburger.classList.remove('active');
       }
