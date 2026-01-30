@@ -106,7 +106,6 @@ header p {
   background-color: rgba(0, 123, 255, 0.1);
 }
 
-/* Hamburger Menu Styles */
 .hamburger-menu {
   display: none;
   flex-direction: column;
@@ -142,7 +141,6 @@ header p {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Mobile Menu Display */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: flex;
@@ -699,6 +697,113 @@ footer a:hover {
   font-weight: 500;
 }
 
+#info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#info th {
+  background: #3a4f68;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#info td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 0.95rem;
+}
+/* Striped rows for better readability */
+#info tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+#info tbody tr:nth-child(odd) {
+  background-color: white;
+}
+/* Remove bottom border from last row */
+#info tbody tr:last-child td {
+  border-bottom: none;
+}
+#info td {
+  text-align: center;
+  font-weight: 500;
+  color: #2c3e50;
+}
+/* Mobile responsive */
+@media (max-width: 768px) {
+  #info table {
+    font-size: 0.9rem;
+  }
+  
+  #info th,
+  #info td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  /* Stack table on small screens */
+  #info table,
+  #info thead,
+  #info tbody,
+  #info th,
+  #info td,
+  #info tr {
+    display: block;
+  }
+  
+  #info thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  #info tr {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  #info td {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  #info td:before {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 45%;
+    padding-right: 0.75rem;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #3584e4;
+  }
+  
+  #info td:nth-of-type(1):before { content: "Produkt"; }
+  #info td:nth-of-type(2):before { content: "Preis/Tag"; }
+  #info td:nth-of-type(3):before { content: "Preis/Woche"; }
+}
+@media (max-width: 480px) {
+  #info td:before {
+    font-size: 0.85rem;
+    top: 0.5rem;
+  }
+  
+  #info td {
+    padding: 0.5rem;
+    padding-left: 50%;
+    font-size: 0.85rem;
+  }
+}
+
 /* Responsive Design for Vehicles Page */
 @media (max-width: 768px) {
   .vehicles-grid {
@@ -873,11 +978,6 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
-  }
-
-  .info-card {
-    padding: 1rem;
-    margin-bottom: 1rem;
   }
 
   .load-more-btn {
